@@ -1,0 +1,6 @@
+{
+  "name": "Bhandari VMS",
+  "description": "Multi-role Vendor Management Software (VMS) for Bhandari Automobiles, featuring role-based portals for Directors, GMs, Purchase Teams, Accounts, and Audit with full AVL, RFQ, PO, GRN, and Invoice matching workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
