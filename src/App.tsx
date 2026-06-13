@@ -12,6 +12,7 @@ import AccountsPanel from './components/AccountsPanel';
 import AuditPanel from './components/AuditPanel';
 
 // Types and mock data
+import logo from './public/Bhandari-Automobiles-Logo-300x199.png';
 import { 
   INITIAL_VENDORS, INITIAL_REQUISITIONS, INITIAL_RFQS, INITIAL_POS, 
   INITIAL_GRNS, INITIAL_INVOICES, INITIAL_CONTRACTS, INITIAL_PAYMENT_BATCHES, INITIAL_USERS 
@@ -182,10 +183,12 @@ export default function App() {
         
         {/* Top Premium Bar with high-contrast borders */}
         <header className="border-b border-gray-200 bg-white h-16 flex items-center px-8 justify-between shadow-xs z-20">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-blue-600 flex items-center justify-center rounded shadow-sm">
-              <span className="text-white text-sm font-bold leading-none select-none font-sans">B</span>
-            </div>
+            <div className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt="Bhandari Automobiles"
+              className="h-10 w-auto object-contain bg-white rounded shadow-sm"
+            />
             <div>
               <span className="font-bold tracking-tight text-sm uppercase text-blue-600 block">Bhandari Automobiles</span>
               <span className="text-[10px] text-gray-500 font-semibold tracking-wider uppercase block">Enterprise Vendor Portal & VMS</span>

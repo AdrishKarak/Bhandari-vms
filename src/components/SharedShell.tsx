@@ -2,6 +2,7 @@ import React from 'react';
 import { LogOut, Menu, UserCheck } from 'lucide-react';
 import { Role } from '../types';
 import VmsSearchBar from './VmsSearchBar';
+import logo from '../public/Bhandari-Automobiles-Logo-300x199.png';
 
 interface SharedShellProps {
   role: Role;
@@ -89,9 +90,11 @@ export default function SharedShell({
             className="flex items-center gap-3 hover:opacity-85 active:scale-98 transition-all cursor-pointer bg-transparent border-none text-left p-0"
             title="Return to Corporate Landing Page"
           >
-            <div className="w-7 h-7 bg-blue-600 flex items-center justify-center rounded shadow-sm">
-              <span className="text-white text-xs font-bold leading-none">B</span>
-            </div>
+            <img
+              src={logo}
+              alt="Bhandari Automobiles"
+              className="h-9 w-auto object-contain bg-white rounded shadow-sm"
+            />
             <div>
               <span className="text-sm font-extrabold tracking-tight text-blue-600 uppercase block">
                 Bhandari Auto
